@@ -3,9 +3,11 @@ title: "HW-2"
 format: pdf
 editor: visual
 ---
+
 # Packages
 
 ## Question 1
+
 ```{r}
 #| eval: FALSE
 install.packages("aRtsy")
@@ -13,19 +15,23 @@ install.packages("aRtsy")
 
 install packages downloads the packages onto your local r version. Library loads the package from your downloaded packages and opens the package and makes it ready to use. 
 \newpage
+
 ## Question 2
+
 ```{r}
 library("aRtsy")
 ```
-The Collatz conjecture is an unsolved math problem that asks if repeating two simple rules will always bring any positive whole number down to 1. If the number is even divide by 2. If it is odd multiply by three and add one. 
-$f(n)=\begin{cases}n/2 & \text{if } n \text{ is even}\\ 3n+1 & \text{if } n \text{ is odd} \end{cases}$
-\newpage
+
+The Collatz conjecture is an unsolved math problem that asks if repeating two simple rules will always bring any positive whole number down to 1. If the number is even divide by 2. If it is odd multiply by three and add one. $f(n)=\begin{cases}n/2 & \text{if } n \text{ is even}\\ 3n+1 & \text{if } n \text{ is odd} \end{cases}$ \newpage
 
 ## Question 3
+
 #### a)
-canvas_Collatz() is a function from aRtsy that can be used to graph the Collatz conjecture. The color blue is what the graph should use and n = 10 is our how many different integers we want to throw into the function. 
+
+canvas_Collatz() is a function from aRtsy that can be used to graph the Collatz conjecture. The color blue is what the graph should use and n = 10 is our how many different integers we want to throw into the function.
 
 #### b)
+
 ```{r}
 set.seed(4)
 canvas_collatz(
@@ -34,18 +40,20 @@ canvas_collatz(
 )
 ```
 
-You get a different output every time because it randomly selects 10 different integers to run through the rules each time. It plots their behavior through the conjecture on the plot. 
+You get a different output every time because it randomly selects 10 different integers to run through the rules each time. It plots their behavior through the conjecture on the plot.
 
-This makes it hard to consistently represent the same data and explain functions of the graph. Every time you render you don't know what will pop up. 
+This makes it hard to consistently represent the same data and explain functions of the graph. Every time you render you don't know what will pop up.
 
 set.seed is helpful because it means that the plot will be the same each time while we use set seed. This helps us to analysis the Collatz conjecture. 
-\newpage
+\newpage 
+
 ## Question 4
+
 ```{r}
 canvas_collatz(
   colors = c("blue"),
   n = 1:20
 )
 ```
-n is n = 1:20 instead of n = 10. This code instead of having a fixed number of integers (10), it has the integers between 1-20 as inputs every time it runs. 
-It would not be appropriate because we see the same exact graph every time because the inputs don't change unlike the first graph. 
+
+n is n = 1:20 instead of n = 10. This code instead of having a fixed number of integers (10), it has the integers between 1-20 as inputs every time it runs. It would not be appropriate because we see the same exact graph every time because the inputs don't change unlike the first graph.
