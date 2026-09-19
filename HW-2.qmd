@@ -13,4 +13,11 @@ install.packages("aRtsy")
 
 install packages downloads the packages onto your local r version. Library loads the package from your downloaded packages and opens the package and makes it ready to use. 
 
+## Question 2
+```{r}
+library("aRtsy")
+```
+The Collatz conjecture is an unsolved math problem that asks if repeating two simple rules will always bring any positive whole number down to 1. If the number is even divide by 2. If it is odd multiply by three and add one. 
+$f(n)=\begin{cases}n/2 & \text{if } n \text{ is even}\\ 3n+1 & \text{if } n \text{ is odd} \end{cases}$
+
 
