@@ -38,3 +38,13 @@ You get a different output every time because it randomly selects 10 different i
 This makes it hard to consistently represent the same data and explain functions of the graph. Every time you render you don't know what will pop up. 
 
 set.seed is helpful because it means that the plot will be the same each time while we use set seed. This helps us to analysis the Collatz conjecture. 
+
+## Question 4
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+```
+n is n = 1:20 instead of n = 10. This code instead of having a fixed number of integers (10), it has the integers between 1-20 as inputs every time it runs. 
+It would not be appropriate because we see the same exact graph everytime because the inputs don't change unlike the first graph. 
