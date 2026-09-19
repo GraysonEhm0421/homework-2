@@ -1,0 +1,16 @@
+---
+title: "HW-2"
+format: pdf
+editor: visual
+---
+# Packages
+
+## Question 1
+```{r}
+#| eval: FALSE
+install.packages("aRtsy")
+```
+
+install packages downloads the packages onto your local r version. Library loads the package from your downloaded packages and opens the package and makes it ready to use. 
+
+
