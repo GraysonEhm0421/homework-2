@@ -20,4 +20,21 @@ library("aRtsy")
 The Collatz conjecture is an unsolved math problem that asks if repeating two simple rules will always bring any positive whole number down to 1. If the number is even divide by 2. If it is odd multiply by three and add one. 
 $f(n)=\begin{cases}n/2 & \text{if } n \text{ is even}\\ 3n+1 & \text{if } n \text{ is odd} \end{cases}$
 
+## Question 3
+#### a)
+canvas_Collatz() is a function from aRtsy that can be used to graph the Collatz conjecture. The color blue is what the graph should use and n = 10 is our how many different integers we want to throw into the function. 
 
+#### b)
+```{r}
+set.seed(4)
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+
+You get a different output every time because it randomly selects 10 different integers to run through the rules each time. It plots their behavior through the conjecture on the plot. 
+
+This makes it hard to consistently represent the same data and explain functions of the graph. Every time you render you don't know what will pop up. 
+
+set.seed is helpful because it means that the plot will be the same each time while we use set seed. This helps us to analysis the Collatz conjecture. 
